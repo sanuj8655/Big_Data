@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<configuration>
+	<property>
+		<name>fs.defaultFS</name>
+		<value>file:///</value>
+	</property>
+	<property>
+		<name>mapreduce.framework.name</name>
+		<value>local</value>
+	</property>
+</configuration>
+
+<!--
+hadoop jar <jar-path> <main-class> -conf <config-file-path> <cmd-line args to main-class>
+-->
+

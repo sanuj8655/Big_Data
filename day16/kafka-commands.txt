@@ -1,0 +1,35 @@
+.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --create --topic kafkatest --replication-factor 1 --partitions 1
+
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic kafkatest
+
+.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic kafkatest
+
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic kafkatest --from-beginning
+
+
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic kafkatest --group 1
+
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic kafkatest --group 1
+
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic kafkatest --group 2
+
+.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic kafkatest
+
+.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic kafkatest
+
+.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --create --topic edbda --replication-factor 1 --partitions 3
+
+.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list
+
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic edbda --partition 0
+
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic edbda --partition 1
+
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic edbda --partition 2
+
+.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic edbda
+
+
+
+
+
